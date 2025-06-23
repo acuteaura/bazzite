@@ -18,7 +18,7 @@ sh -c 'echo -e "[1password]\nname=1Password Stable Channel\nbaseurl=https://down
 
 # librewolf
 curl -fsSL https://repo.librewolf.net/librewolf.repo > /etc/yum.repos.d/librewolf.repo
-dnf install 1password librewolf
+dnf -y install 1password librewolf
 ln -s /usr/lib/mozilla/native-messaging-hosts /usr/lib/librewolf/native-messaging-hosts
 
 # Use a COPR Example:
